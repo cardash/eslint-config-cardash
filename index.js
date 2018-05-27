@@ -38,9 +38,6 @@ module.exports = {
       exports: 'always',
       functions: 'ignore',
     }],
-    /* package.json has been deduped, which triggers this on most packages. We
-       will disable this rule for now while we figure out a good solution. */
-    'import/no-extraneous-dependencies': 0,
     semi: [2, 'never'],
     'arrow-body-style': 0,
     quotes: ['error', 'single'],
