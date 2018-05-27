@@ -5,7 +5,10 @@
   "author": "Paul Hoang <paul@cardash.com>",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
-    "eslint-config-airbnb": "15.0.2",
-    "eslint-plugin-import": "2.2.0"
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.12.0"
+  },
+  "devDependencies": {
+    "eslint": "2.x - 4.x"
   }
 }
