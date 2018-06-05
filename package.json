@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cardash",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "Paul Hoang <paul@cardash.com>",
   "license": "SEE LICENSE IN LICENSE",
