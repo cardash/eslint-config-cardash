@@ -46,5 +46,6 @@ module.exports = {
     'no-param-reassign': [2, { props: false, }],
     'no-mixed-operators': 0,
     'no-continue': 0,
+    'prefer-destructuring': 0,
   },
 }
