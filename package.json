@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Paul Hoang <paul@cardash.com>",
   "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "test": "node index.js"
+  },
   "dependencies": {
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.12.0"
