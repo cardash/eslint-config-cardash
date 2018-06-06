@@ -15,6 +15,12 @@ jobs:
     working_directory: ~/repo
     steps:
       - run:
+          name: Setup
+          command: |
+            apt update
+            apt --yes install \
+              jq
+      - run:
           name: Tag version if it doesn't exist
           command: |
             TAG="v$(cat package.json | jq -r .version)"
