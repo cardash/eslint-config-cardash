@@ -34,6 +34,7 @@ jobs:
               git tag $TAG
               git push origin --tags
             fi
+            exit 0
 
 workflows:
   version: 2
