@@ -27,11 +27,13 @@ jobs:
       - run:
           name: Tag version if it doesn't exist
           command: |
+            echo "1"
             TAG="v$(cat package.json | jq -r .version)"
+            echo "2"
             git tag | grep -q "^$TAG$"
 
-            echo $?
             echo "Foo"
+            echo $?
 
             if [[ $? != "0" ]]; then
               git tag $TAG
