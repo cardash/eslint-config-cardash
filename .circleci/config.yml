@@ -30,6 +30,9 @@ jobs:
             TAG="v$(cat package.json | jq -r .version)"
             git tag | grep -q "^$TAG$"
 
+            echo $?
+            echo "Foo"
+
             if [[ $? != "0" ]]; then
               git tag $TAG
               git push origin --tags
