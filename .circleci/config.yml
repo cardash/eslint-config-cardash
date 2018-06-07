@@ -14,13 +14,14 @@ jobs:
       - image: ubuntu:17.10
     working_directory: ~/repo
     steps:
-      - checkout
       - run:
           name: Setup
           command: |
             apt update
             apt --yes install \
-              jq
+              jq \
+              git
+      - checkout
       - run:
           name: Tag version if it doesn't exist
           command: |
