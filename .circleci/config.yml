@@ -38,8 +38,11 @@ jobs:
             echo $HAS_TAG
 
             if [[ $HAS_TAG != "0" ]]; then
+              echo "5"
               git tag $TAG
+              echo "6"
               git push origin --tags
+              echo "7"
             fi
 
 workflows:
