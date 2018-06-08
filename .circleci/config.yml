@@ -40,7 +40,7 @@ jobs:
             echo $HAS_TAG2
             echo '3.5'
 
-            HAS_TAG=$(git tag | grep "^$TAG$" | wc -l)
+            HAS_TAG=$(git tag | grep "^$TAG$" || true | wc -l)
             echo '4'
             echo $HAS_TAG
 
