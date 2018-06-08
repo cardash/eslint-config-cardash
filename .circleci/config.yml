@@ -33,6 +33,13 @@ jobs:
             echo '2'
             echo "v1.0.0" | grep "^$TAG$"
             echo '3'
+            HAS_TAG1=$(git tag)
+            HAS_TAG2=$(git tag | wc -l)
+
+            echo $HAS_TAG1
+            echo $HAS_TAG2
+            echo '3.5'
+
             HAS_TAG=$(git tag | grep "^$TAG$" | wc -l)
             echo '4'
             echo $HAS_TAG
