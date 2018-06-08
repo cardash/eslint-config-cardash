@@ -34,6 +34,8 @@ jobs:
             echo "v1.0.0" | grep "^$TAG$"
             echo '3'
             HAS_TAG=$(git tag | grep "^$TAG$" | wc -l)
+            echo '4'
+            echo $HAS_TAG
 
             if [[ $HAS_TAG != "0" ]]; then
               git tag $TAG
