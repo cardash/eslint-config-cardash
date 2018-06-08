@@ -28,6 +28,11 @@ jobs:
           name: Tag version if it doesn't exist
           command: |
             TAG="v$(cat package.json | jq -r .version)"
+            echo '1'
+            git tag
+            echo '2'
+            echo "v1.0.0" | grep "^$TAG$"
+            echo '3'
             HAS_TAG=$(git tag | grep "^$TAG$" | wc -l)
 
             if [[ $HAS_TAG != "0" ]]; then
